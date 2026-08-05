@@ -1,19 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portfólio | Vitor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Vitor</h1>
-        <nav>
-            <a href="#">teste1</a>
-            <a href="#">teste2</a>
-            <a href="#">teste3</a>
+    <header class="cabecalho" id="inicio">
+        <nav class="navegacao" aria-label="Navegação principal">
+            <a class="logo" href="#inicio">Vitor</a>
+
+            <div class="menu">
+                <a href="#sobre">Sobre mim</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#interesses">Interesses</a>
+            </div>
         </nav>
+
+        <div class="apresentacao">
+            <p class="destaque">Olá, eu sou</p>
+            <h1>Vitor</h1>
+            <p>Estudante do Ensino Médio e futuro desenvolvedor.</p>
+            <a class="botao" href="#sobre">Conheça mais sobre mim</a>
+        </div>
     </header>
+
+    <main>
+        <section class="secao" id="sobre">
+            <p class="subtitulo">Quem sou eu</p>
+            <h2>Sobre mim</h2>
+
+            <div class="sobre-mim">
+                <p>
+                    Tenho 16 anos, faço aniversário no dia 19 de abril e estou
+                    cursando o 2º ano do Ensino Médio.
+                </p>
+                <p>
+                    Gosto de tecnologia, velocidade e criatividade. Estou sempre
+                    buscando aprender coisas novas para construir o futuro que desejo.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao secao-destaque" id="hobbies">
+            <p class="subtitulo">O que gosto de fazer</p>
+            <h2>Meus hobbies</h2>
+
+            <div class="cartoes">
+                <article class="cartao">
+                    <span aria-hidden="true">🎮</span>
+                    <h3>Jogar</h3>
+                    <p>Gosto de aproveitar meu tempo livre jogando.</p>
+                </article>
+
+                <article class="cartao">
+                    <span aria-hidden="true">🏎️</span>
+                    <h3>Automobilismo</h3>
+                    <p>Acompanho Fórmula 1 e outras categorias do automobilismo.</p>
+                </article>
+
+                <article class="cartao">
+                    <span aria-hidden="true">📺</span>
+                    <h3>Animes</h3>
+                    <p>Também gosto de assistir animes.</p>
+                </article>
+
+                <article class="cartao">
+                    <span aria-hidden="true">✏️</span>
+                    <h3>Desenhar</h3>
+                    <p>De vez em quando, coloco a criatividade no papel.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao" id="interesses">
+            <p class="subtitulo">Planos para o futuro</p>
+            <h2>Meus interesses e objetivos</h2>
+
+            <div class="objetivos">
+                <article>
+                    <h3>Carreira em desenvolvimento</h3>
+                    <p>
+                        Quero construir uma boa carreira na área de desenvolvimento
+                        e evoluir constantemente como programador.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Projeto BMW F82</h3>
+                    <p>
+                        Tenho o objetivo de conquistar uma BMW F82 antes dos 30 anos
+                        e preparar o carro para alcançar entre 700 e 750 cv.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por Vitor • 2026</p>
+    </footer>
 </body>
 </html>
