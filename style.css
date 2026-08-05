@@ -152,14 +152,23 @@ a {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(24, 52, 74, 0.08);
-    padding: 26px 20px;
+    overflow: hidden;
+    padding-bottom: 26px;
     text-align: center;
 }
 
-.cartao span {
+.cartao img {
     display: block;
-    font-size: 2.4rem;
-    margin-bottom: 12px;
+    height: auto;
+    width: 100%;
+}
+
+.cartao h3 {
+    margin: 20px 20px 8px;
+}
+
+.cartao p {
+    padding: 0 20px;
 }
 
 .cartao h3,
