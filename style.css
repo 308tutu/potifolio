@@ -226,6 +226,94 @@ img {
     padding: 28px;
 }
 
+.secao-contato {
+    background-color: #e8f4fa;
+    border-radius: 16px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+
+.secao-contato h2 {
+    margin-bottom: 10px;
+}
+
+.introducao-contato {
+    margin: 0 auto 32px;
+    max-width: 650px;
+}
+
+.contatos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cartao-contato {
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(24, 52, 74, 0.08);
+    display: flex;
+    gap: 16px;
+    padding: 22px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.cartao-contato:hover {
+    border-color: #0b5f86;
+    transform: translateY(-4px);
+}
+
+.cartao-contato:focus-visible {
+    outline: 3px solid #0b5f86;
+    outline-offset: 4px;
+}
+
+.icone-contato {
+    align-items: center;
+    background-color: #e8f4fa;
+    border-radius: 50%;
+    color: #0b5f86;
+    display: flex;
+    flex: 0 0 52px;
+    height: 52px;
+    justify-content: center;
+}
+
+.icone-contato svg {
+    fill: none;
+    height: 26px;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    width: 26px;
+}
+
+.icone-contato .ponto-icone {
+    fill: currentColor;
+    stroke: none;
+}
+
+.dados-contato {
+    min-width: 0;
+}
+
+.dados-contato span {
+    color: #526979;
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.dados-contato strong {
+    color: #0b5f86;
+    overflow-wrap: anywhere;
+}
+
 footer {
     background-color: #072f48;
     color: #ffffff;
@@ -236,6 +324,10 @@ footer {
 @media (max-width: 980px) {
     .cartoes {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contatos {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -271,6 +363,10 @@ footer {
         max-width: 380px;
         width: 100%;
     }
+
+    .secao-contato {
+        margin-bottom: 65px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -300,6 +396,10 @@ footer {
     }
 
     .secao-destaque {
+        border-radius: 0;
+    }
+
+    .secao-contato {
         border-radius: 0;
     }
 }
