@@ -28,7 +28,7 @@ img {
 .cabecalho {
     background:
         linear-gradient(rgba(5, 35, 58, 0.72), rgba(5, 35, 58, 0.72)),
-        url("img.jpeg") center / cover no-repeat;
+        url("/assets/img.jpeg") center / cover no-repeat;
     color: #ffffff;
     display: flex;
     flex-direction: column;
